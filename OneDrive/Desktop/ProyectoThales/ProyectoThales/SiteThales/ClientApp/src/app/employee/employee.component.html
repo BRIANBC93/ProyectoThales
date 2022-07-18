@@ -1,0 +1,59 @@
+<h1 id="tableLabel">Welcome Employee</h1>
+
+<p>Employee.</p>
+
+
+<div class="search-name">
+  <input class="form-control" type="text" name="Txtsearch" id="Txtsearch" #Txtsearch autocomplete="on" placeholder=" Employee ID  ">
+</div>
+<div style="text-align: center">
+  <button mat-button color="primary" (click)="Search(Txtsearch.value)">Search</button>
+</div>
+
+<div *ngIf="Txtsearch.value != ''">
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="information">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Anual Salary</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ information.id }}</td>
+      <td>{{ information.employeeName }}</td>
+      <td>${{ information.employeeSalary }}</td>
+      <td>${{ information.employee_anual_Salary }}</td>
+      <td>{{ information.employeeAge }}</td>
+      <td>{{ information.profileImage }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div *ngIf="Txtsearch.value == ''">
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="informationList">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Anual Salary</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of informationList">
+          <td>{{ item.id }}</td>
+          <td>{{ item.employeeName }}</td>
+          <td>${{ item.employeeSalary }}</td>
+          <td>${{ item.employee_anual_Salary }}</td>
+          <td>{{ item.employeeAge }}</td>
+          <td>{{ item.profileImage }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

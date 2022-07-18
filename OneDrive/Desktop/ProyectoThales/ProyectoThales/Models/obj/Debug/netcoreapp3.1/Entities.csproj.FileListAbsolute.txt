@@ -1,0 +1,16 @@
+C:\Users\BBAZU\source\repos\Models\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\BBAZU\source\repos\Models\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\BBAZU\source\repos\Models\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\BBAZU\source\repos\Models\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\BBAZU\source\repos\Models\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\BBAZU\source\repos\Models\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\BBAZU\source\repos\Models\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\BBAZU\source\repos\Models\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\BBAZU\OneDrive\Desktop\ProyectoThales\ProyectoThales\Models\obj\Debug\netcoreapp3.1\Entities.pdb

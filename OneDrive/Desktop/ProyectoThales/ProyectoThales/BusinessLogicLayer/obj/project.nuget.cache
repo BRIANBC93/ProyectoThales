@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gT5pb/MKnjxXkxN+RQ7CpAN6p2wuGLZTJgUH83Etn6gVPTmlJxIUQ3Hs2tS+Uw3OTf4/AWeMwZZqXFQjxP/fbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BBAZU\\OneDrive\\Desktop\\ProyectoThales\\ProyectoThales\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BBAZU\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jYhj9HVcFrJ03DR5li/XVb5wl0BEXu4keW0MWMkvt9x3yJ2XhiiGw7D1T5sOLu3LHrnMedo7ZiIGCsusV8usug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BBAZU\\OneDrive\\Desktop\\ProyectoThales\\ProyectoThales\\Models\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BBAZU\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
