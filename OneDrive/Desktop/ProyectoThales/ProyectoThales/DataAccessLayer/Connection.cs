@@ -12,6 +12,10 @@ namespace DataAccessLayer
     public class Connection
     {
         String BaseUrl = "http://dummy.restapiexample.com";
+        /// <summary>
+        /// Search for all employees,connect with test apis
+        /// </summary>
+        /// <returns></returns>
         public List<Employees.Data> SearchEmployees()
         {
             Employees.ValuesList EmpInfo = new Employees.ValuesList();
@@ -39,6 +43,11 @@ namespace DataAccessLayer
         }
 
 
+        /// <summary>
+        /// Search Employee by Id,connect with test apis
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         public Employees.Data SearchEmployeeId(int Id)
         {
             Employees.Values EmpInfo = new Employees.Values();
@@ -65,6 +74,11 @@ namespace DataAccessLayer
             return EmpInfo.Data;
         }
 
+        /// <summary>
+        /// Validate the status of the connection with the test apis and try again
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         private Employees.Data  ValidationState(int Id)
         {
             Employees.Data state;
@@ -77,6 +91,10 @@ namespace DataAccessLayer
             return state;
         }
 
+        /// <summary>
+        /// Validate the status of the connection with the test apis and try again
+        /// </summary>
+        /// <returns></returns>
         private List<Employees.Data> ValidationState()
         {
             List<Employees.Data> state;

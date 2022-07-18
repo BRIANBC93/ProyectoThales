@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Console } from 'console';
 
 
 @Component({
@@ -9,16 +7,16 @@ import { Console } from 'console';
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent{
+export class EmployeeComponent {
   public information: Data;
   public informationList: Data[];
 
-    constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {
 
-    }
+  }
 
   public Search(id: number): void {
-    console.log("vacio:"+ id);
+    console.log("vacio:" + id);
     if (String(id) != "") {
       this.http.get<Data>('https://localhost:44349/' + 'SearchEmployeeId?Id=' + id).subscribe(result => {
         this.information = result;
@@ -38,20 +36,13 @@ export class EmployeeComponent{
     }, error => console.error(error));
   }
 
-  }
-
-
-interface Values {
-  Status: string;
-  Data: Data;
-  Message: string;
 }
 
 interface Data {
-  id : number;
-  employeeName:  string;
+  id: number;
+  employeeName: string;
   employeeSalary: number;
   employee_anual_Salary: number;
   employeeAge: number;
-  profileImage:  string;
+  profileImage: string;
 }

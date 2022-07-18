@@ -9,6 +9,11 @@ namespace WebApiThales.Controllers
     [Route("[controller]")]
     public class EmployeesController : ControllerBase
     {
+        /// <summary>
+        /// Search Employee by Id
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpGet("~/SearchEmployeeId")]
         public Employees.Data SearchEmployeeId(int Id)
         {
@@ -16,6 +21,10 @@ namespace WebApiThales.Controllers
             return Data.SearchEmployeeId(Id);
         }
 
+        /// <summary>
+        /// Search for all employees
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("~/SearchEmployees")]
         public List<Employees.Data> SearchEmployees()
         {

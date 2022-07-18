@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Models\Entities.csproj", "{6B87D6D7-9FA8-44BB-9085-0B8DBC9B817B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteThales", "SiteThales\SiteThales.csproj", "{A8364A96-8A3C-48BC-B31D-1B222904C058}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteThales", "SiteThales\SiteThales.csproj", "{A8364A96-8A3C-48BC-B31D-1B222904C058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectThales", "UnitTestProjectThales\UnitTestProjectThales.csproj", "{7A2C050D-2126-4CAA-8F66-2B3C854712F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A8364A96-8A3C-48BC-B31D-1B222904C058}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8364A96-8A3C-48BC-B31D-1B222904C058}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8364A96-8A3C-48BC-B31D-1B222904C058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2C050D-2126-4CAA-8F66-2B3C854712F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2C050D-2126-4CAA-8F66-2B3C854712F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2C050D-2126-4CAA-8F66-2B3C854712F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2C050D-2126-4CAA-8F66-2B3C854712F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{EE348AF1-EA2C-4C4A-AC7E-C532B63919F6} = {7C3EB56D-FA46-4653-B66B-DBFFC1AE202C}
 		{D2F1DB6D-4138-45FC-94E4-E766483DE63B} = {7C3EB56D-FA46-4653-B66B-DBFFC1AE202C}
 		{6B87D6D7-9FA8-44BB-9085-0B8DBC9B817B} = {90465D2B-7789-4B89-B165-1C7EE14C1C99}
+		{7A2C050D-2126-4CAA-8F66-2B3C854712F2} = {FED06109-0906-4DB2-BF3E-FDE437BEE950}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C0CFD6-9203-443E-98FB-3F0E1C2AF80C}

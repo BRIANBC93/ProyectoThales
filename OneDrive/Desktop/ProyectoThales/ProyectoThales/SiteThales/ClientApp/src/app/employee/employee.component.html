@@ -4,38 +4,19 @@
 
 
 <div class="search-name">
-  <input class="form-control" type="text" name="Txtsearch" id="Txtsearch" #Txtsearch autocomplete="on" placeholder=" Employee ID  ">
+  <input class="form-control" type="number" min="1" name="Txtsearch" id="Txtsearch" #Txtsearch autocomplete="on" placeholder=" Employee ID  ">
 </div>
 <div style="text-align: center">
-  <button mat-button color="primary" (click)="Search(Txtsearch.value)">Search</button>
+  <button class="btn btn-success btn-lg btn-block" (click)="Search(Txtsearch.value)">Search</button>
+</div>
+<br />
+<div *ngIf="Txtsearch.value != '' &&  information == null ">
+  <h1>No data found with that ID</h1>
 </div>
 
-<div *ngIf="Txtsearch.value != ''">
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="information">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Salary</th>
-      <th>Anual Salary</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{ information.id }}</td>
-      <td>{{ information.employeeName }}</td>
-      <td>${{ information.employeeSalary }}</td>
-      <td>${{ information.employee_anual_Salary }}</td>
-      <td>{{ information.employeeAge }}</td>
-      <td>{{ information.profileImage }}</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div *ngIf="Txtsearch.value == ''">
-    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="informationList">
+<div *ngIf="Txtsearch.value != '' && information != null">
+  <div *ngIf="Txtsearch.value == information.id">
+    <table class='table table-striped table-dark' aria-labelledby="tableLabel" *ngIf="information">
       <thead>
         <tr>
           <th>Id</th>
@@ -43,17 +24,52 @@
           <th>Salary</th>
           <th>Anual Salary</th>
           <th>Age</th>
+          <th>Image Profile</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of informationList">
-          <td>{{ item.id }}</td>
-          <td>{{ item.employeeName }}</td>
-          <td>${{ item.employeeSalary }}</td>
-          <td>${{ item.employee_anual_Salary }}</td>
-          <td>{{ item.employeeAge }}</td>
-          <td>{{ item.profileImage }}</td>
+        <tr>
+          <td>{{ information.id }}</td>
+          <td>{{ information.employeeName }}</td>
+          <td>${{ information.employeeSalary }}</td>
+          <td>${{ information.employee_anual_Salary }}</td>
+          <td>{{ information.employeeAge }}</td>
+          <td *ngIf="information.profileImage != ''">
+            {{ information.profileImage }}
+          <td *ngIf="information.profileImage == ''">
+            Image not available
+          </td>
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+<div *ngIf="Txtsearch.value == '' && informationList != null">
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="informationList">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Anual Salary</th>
+        <th>Age</th>
+        <th>Image Profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of informationList">
+        <td>{{ item.id }}</td>
+        <td>{{ item.employeeName }}</td>
+        <td>${{ item.employeeSalary }}</td>
+        <td>${{ item.employee_anual_Salary }}</td>
+        <td>{{ item.employeeAge }}</td>
+        <td *ngIf="item.profileImage != ''">
+          {{ item.profileImage }}
+        <td *ngIf="item.profileImage == ''">
+          Image not available
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
